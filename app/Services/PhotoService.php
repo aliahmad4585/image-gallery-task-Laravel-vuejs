@@ -47,7 +47,6 @@ class PhotoService
                 ->join('photos_likes', 'photos_likes.photo_id', '=', 'photos.id', 'left')
                 ->groupBy('photos.id')
                 ->orderByRaw('favs DESC')
-                ->orderBy('photos_likes.updated_at')
                 ->offset($offset)
                 ->limit($entriesPerPage)
                 ->get();
