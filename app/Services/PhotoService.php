@@ -47,14 +47,18 @@ class PhotoService
                 ->join('photos_likes', 'photos_likes.photo_id', '=', 'photos.id', 'left')
                 ->groupBy('photos.id')
                 ->orderByRaw('favs DESC')
+                ->orderBy('photos_likes.updated_at')
                 ->offset($offset)
                 ->limit($entriesPerPage)
                 ->get();
             $found = Photo::count();
         } else {
             $results = DB::table('users')
-                ->select(DB::raw('SQL_CALC_FOUND_ROWS users.name, users.email, 
-            (SELECT COUNT(*) FROM photos_likes WHERE user_id = users.id) AS favs'))
+                ->select(
+                    'users.name',
+                    'users.email',
+                    DB::raw('(SELECT COUNT(*) FROM photos_likes WHERE user_id = users.id) AS favs')
+                )
                 ->join('photos_likes', 'photos_likes.user_id', '=', 'users.id', 'left')
                 ->whereBetween('photos_likes.created_at', [Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
                 ->groupBy('users.id')
