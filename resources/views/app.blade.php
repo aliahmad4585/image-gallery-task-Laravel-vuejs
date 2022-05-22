@@ -11,7 +11,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/menu.min.css">
     <!-- Internal -->
-    <link href="//still-shore-35289.herokuapp.com/css/app.css" rel="stylesheet">
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://www.studydrive.net/image/favicons/16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="https://www.studydrive.net/image/favicons/32x32.png" sizes="32x32">

@@ -26,12 +26,5 @@
     "dependencies": {
         "vue-axios": "^3.4.1",
         "vuejs-paginate": "^2.1.0"
-    },
-    "engines": {
-        "node": "16.15.0",
-        "yarn": "0.21.3"
-    },
-    "scripts": {
-        "postinstall": "npm run production"
     }
 }
