@@ -28,7 +28,6 @@
         "vuejs-paginate": "^2.1.0"
     },
     "engines": {
-        "node": ">= 6.9.4",
-        "npm": ">= 4.4.0"
+        "node": "14.x"
     }
 }
