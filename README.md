@@ -45,7 +45,7 @@ http://salty-meadow-13832.herokuapp.com/
 2. move the project folder
 3. Run **composer install** for laravel dependencies
 4. **php artisan key:generate**
-5. Setup the database (Add database credentials in env file)
+5. Setup the database with name **image_gallery** (Add database credentials in env file)
 6. **php artisan migrate** to create the tables
 7. **php artisan db:seed** to seed the user and photos data
 8. Run **npm install** for frontend dependencies
