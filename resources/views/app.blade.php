@@ -11,7 +11,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/menu.min.css">
     <!-- Internal -->
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://www.studydrive.net/image/favicons/16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="https://www.studydrive.net/image/favicons/32x32.png" sizes="32x32">
@@ -87,12 +87,12 @@
     </footer>
     @show
 
-    <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
     <script src="https://unpkg.com/vuejs-paginate@latest"></script>
-    <script src="{{ asset('js/bundle.js') }}"></script>
+    <script src="/js/bundle.js"></script>
 
-    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
 </body>
 
 </html>
