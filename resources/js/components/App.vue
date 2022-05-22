@@ -71,14 +71,14 @@ export default {
         },
         fetchData() {
 
-            axios.get('json?page=1' + this.weekString)
+            axios.get('photo?page=1' + this.weekString)
                 .then(response => {
                     this.results = response.data;
                     this.totalPages = response.data.totalPages;
                 })
         },
         paginateCallback: function (pageNumber) {
-            axios.get("json?page=" + pageNumber + this.weekString)
+            axios.get("photo?page=" + pageNumber + this.weekString)
                 .then((response) => {
                     this.results = response.data
                 });

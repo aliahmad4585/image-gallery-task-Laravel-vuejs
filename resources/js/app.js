@@ -9,7 +9,7 @@ Vue.use(VueAxios, axios)
 Vue.component('paginate', Paginate)
 
 new Vue({
-  el: '#app',
-  template: '<App/>',
-  components: { App },
+    el: '#app',
+    template: '<App/>',
+    components: { App },
 })

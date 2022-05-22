@@ -6,7 +6,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/json',  [App\Http\Controllers\PhotoController::class, 'getPhotos']);
+Route::get('/photo',  [App\Http\Controllers\PhotoController::class, 'getPhotos']);
 Route::post('/fav', [App\Http\Controllers\FavController::class, 'favourite']);
 
 Auth::routes();

@@ -11,7 +11,7 @@ class FavController extends Controller
 {
 
     /**
-     * Add new favourate if the user has fav the image
+     * Add new favourate if the user has not fav the image
      * Remove the favourate if the user has already liked
      *
      * @param  \Illuminate\Http\Request  $request

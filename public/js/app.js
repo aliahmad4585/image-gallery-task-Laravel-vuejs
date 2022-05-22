@@ -2172,7 +2172,7 @@ Vue.use(vue_axios__WEBPACK_IMPORTED_MODULE_1__["default"], (axios__WEBPACK_IMPOR
     fetchData: function fetchData() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_0___default().get('json?page=1' + this.weekString).then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get('photo?page=1' + this.weekString).then(function (response) {
         _this2.results = response.data;
         _this2.totalPages = response.data.totalPages;
       });
@@ -2180,7 +2180,7 @@ Vue.use(vue_axios__WEBPACK_IMPORTED_MODULE_1__["default"], (axios__WEBPACK_IMPOR
     paginateCallback: function paginateCallback(pageNumber) {
       var _this3 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_0___default().get("json?page=" + pageNumber + this.weekString).then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get("photo?page=" + pageNumber + this.weekString).then(function (response) {
         _this3.results = response.data;
       });
     }
