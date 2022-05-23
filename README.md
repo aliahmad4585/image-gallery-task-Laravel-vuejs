@@ -23,6 +23,9 @@ http://salty-meadow-13832.herokuapp.com/
   1. Heroku
   2. Heroku CLI
 
+### Run the test cases ###
+1. vendor/bin/phpunit
+
 ### Server Requirments ###
 
 1. PHP >= 7.3
